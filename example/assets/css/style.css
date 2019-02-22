@@ -42,7 +42,7 @@ img { max-width: 100%; }
 
 .colored-text { color: #66d6c5; }
 
-::-moz-selection { background: #66d6c5; color: #fff; text-shadow: none; }
+::-moz-selection { background: #b4d666; color: #fff; text-shadow: none; }
 ::selection { background: #66d6c5; color: #fff; text-shadow: none; }
 
 
