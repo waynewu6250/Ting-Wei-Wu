@@ -287,13 +287,19 @@ b#myname {
 .btn-link-2:hover, .btn-link-2:focus, 
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
+/*	################################################################
+	4. ABOUT ME
+################################################################# */
 
-
-/* GREY SECTION */
 #g {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: #f5f5f5;
+}
+
+#padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .portfolio {
