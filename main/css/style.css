@@ -118,34 +118,37 @@ a:focus {
 	2.TOP MENUs
 ################################################################# */
 
+#cid {
+	position: relative;
+	bottom: 12px;
+}
+
 .navbar {
 	margin-bottom: 0;
 	background: #444;
 	border: 0;
 	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 }
-.navbar.navbar-no-bg { background: none; }
+.navbar.navbar-no-bg { background: transparent !important; }
+
+.navbar.navbar-no-bg.scrolled { 
+	background: rgba(255, 255, 255, 0.9) !important
+}
 
 ul.navbar-nav {
 	font-size: 20px;
 	color: #ffffff;
-	margin-top: 20px;
+	margin-top: 38px;
 }
 
 .navbar-inverse ul.navbar-nav li a { 
-	padding-top: 20px; 
+	padding-top: 20px;
 	padding-bottom: 20px; 
-	color: #47bcd1; 
-	opacity: 0.5; 
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000,
-		2px 2px 2px #000;
+	color: #fff; 
+	opacity: 1; 
 	}
-.navbar-inverse ul.navbar-nav li a:hover { color: #2794b6; outline: 0; opacity: 1; }
-.navbar-inverse ul.navbar-nav li a:focus { color: #2794b6; opacity: 1; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #fff; outline: 0; opacity: 0.5; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #fff; opacity: 1; }
 
 .navbar-brand h2{
 	font-weight: 900;
@@ -221,7 +224,7 @@ button.navbar-toggle, .icon-bar {
 	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 790px;
+	height: 100%;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -371,7 +374,9 @@ b#myname {
 	text-align:center;
 }
 
-/* CLIENTS */
+/*	################################################################
+	5. ACTIVITIES
+################################################################# */
 
 .clients img {
 	max-width: 140px;
@@ -384,7 +389,39 @@ b#myname {
 	line-height: 80px;
 }
 
-/* FORM CONFIGURATION */
+/*	################################################################
+	6. ALBUM
+################################################################# */
+
+#sep {
+	background: url(../img/taiwan.jpg) no-repeat center top;
+	padding-top: 100px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	color: white;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#sep h3 {
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+/*	################################################################
+	7. CONTACT
+################################################################# */
 
 input {
 	font-size: 16px;
@@ -433,8 +470,6 @@ input {
 	color: #2f2f2f;
 }
 
-
-
 .dmbutton:hover,
 .dmbutton:active,
 .dmbutton:focus{
@@ -468,34 +503,121 @@ input {
 	font-weight: normal !important;
 }
 
-/* CONTACT SEPARATOR */
-#sep {
-	background: url(../img/sep.jpg) no-repeat center top;
-	padding-top: 100px;
-	background-attachment: relative;
+
+/*	################################################################
+	8. FOOTER
+################################################################# */
+
+.divider-wrapper-dark {
+	background-color: #182326;
 	background-position: center center;
-	min-height: 450px;
-	width: 100%;
-	color: white;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+	background-repeat: repeat;
+	color: #fff;	
 }
 
-#sep h3 {
-	font-weight: 300;
-	letter-spacing: 2px;
+aside.clients img {
+	margin:50px auto
 }
 
-/* FOOTER */
+footer {
+	padding:25px 0;
+}
+
+footer span.copyright {
+	text-transform:uppercase;
+	text-transform:none;
+	line-height:40px
+}
+
+ul.social-buttons {
+	float: right;
+	margin-bottom:0;
+	text-align: center;
+}
+
+ul.social-buttons li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 0%;
+	border: 2px solid #fff;
+	font-size: 16px;
+	line-height: 36px;
+	outline: 0;
+	color: #fff;
+	background-color: rgba(71, 69, 80, 0.0);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+ul.social-buttons li a.twitter {
+	border: 2px solid #55acee;
+	color: #55acee;
+}
+
+ul.social-buttons li a.twitter:hover {
+	border: 2px solid #55acee;
+	background-color: #55acee;
+	color: #fff;
+}
+
+ul.social-buttons li a.facebook {
+	border: 2px solid #3b5998;
+	color: #3b5998;
+}
+
+ul.social-buttons li a.facebook:hover {
+	border: 2px solid #3b5998;
+	background-color: #3b5998;
+	color: #fff;	
+}
+
+ul.social-buttons li a.linkedin {
+	border: 2px solid #0976b4;
+	color: #0976b4;
+}
+
+ul.social-buttons li a.linkedin:hover {
+	border: 2px solid #0976b4;
+	background-color: #0976b4;
+	color: #fff;	
+}
+
+ul.social-buttons li a.google {
+	border: 2px solid #db4437;
+	color: #db4437;
+}
+
+ul.social-buttons li a.google:hover {
+	border: 2px solid #db4437;
+	background-color: #db4437;
+	color: #fff;	
+}
+
+
+.btn:focus,.btn:active,.btn.active,.btn:active:focus {
+	outline:0
+}
+
+::-moz-selection {
+	text-shadow:none;
+	background:#5fb796
+}
+
+::selection {
+	text-shadow:none;
+	background:#5fb796
+}
+
+img::selection {
+	background:0 0
+}
+
+img::-moz-selection {
+	background:0 0
+}
+
 #f {
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -510,6 +632,15 @@ input {
 #f a {
 	color: white;
 }
+
+
+
+/*********************************************************************
+/*********************************************************************
+/*********************************************************************
+/*********************************************************************
+/*********************************************************************
+
 
 /* HEADER 2 - PORTFOLIO SECTION */
 #h2 {
@@ -665,24 +796,4 @@ input {
   margin: 15px 0;
 }
 
-/* Copyrights */
 
-#copyrights {
-  background: #22A7F0;
-  padding: 20px 0;
-  text-align: center;
-}
-
-#copyrights p {
-  margin-bottom: 5px;
-  color: #fff;
-  font-size: 16px;
-}
-
-#copyrights a {
-  color: #fff;
-}
-
-.credits {
-  color: #fff;
-}

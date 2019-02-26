@@ -14,6 +14,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +36,7 @@
   <!------------ Top menus --------------->
   <div id="top"></div>
   <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
-    <div class="container">
+    <div class="container" id="cid">
       <div class="navbar-header">
         <a href="index.html" class="pull-left">
             <p><img src="img/Berkeley.png" width=75px height=75px alt="" id="logo_1"></p>
@@ -70,10 +71,11 @@
   <div id="h">
     <div class="container centered">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 mt wow fadeInLeftBig">
+        <div class="col-md-8 col-md-offset-2 mt wow bounceInDown">
           <h1>Hello, my name is <b id="myname">Ting-Wei Wu</b> from Taiwan.<br/><br/></h1>
-          <h3>MEng at UC Berkeley BioE<br/>
-              MS in National Taiwan University EE
+          <h3>
+            MEng at UC Berkeley BioE<br/>
+            MS in National Taiwan University EE
           </h3>
         </div>
       </div>
@@ -113,7 +115,7 @@
       
       <div class="top-big-link wow swing">
         <a class="btn btn-link-1" href="http://docs.wixstatic.com/ugd/102b0c_6b11b9ba1b344fd3b2de2d0a63d6138f.pdf">My CV</a>
-        <a class="btn btn-link-2 scroll-link" href="https://github.com/waynewu6250">Github</a>
+        <a class="btn btn-link-2" href="https://github.com/waynewu6250">Github</a>
       </div>
     </div>
     <!--/row-->
@@ -129,7 +131,7 @@
             </div>
             <h3>Research</h3>
             <p>My main research in National Taiwan University and UC Berkeley lie 
-              in BioMEMS applications in single cell analysis and cell-based data anlaysis.
+              in BioMEMS applications in single cell analysis and cell-based data analysis.
             </p>
         </div>
         <!--/col-md-4-->
@@ -172,7 +174,7 @@
   <!------------ Projects --------------->
   <div id="padding">
     <div class="container">
-      <div class="row centered">
+      <div class="row centered mb">
         <h2>Check some of my latest works.</h2>
         <div class="col-md-8 col-md-offset-2">
           <p>Please feel free to click on the following icons to see more what I did in the past.<br/>
@@ -183,6 +185,27 @@
       <!--/row-->
     </div>
     <!--/.container-->
+    <div id="g">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-sm-4 features-box wow fadeInUp">
+              <div class="features-box-icon">
+                <i class="ion-ios7-pulse"></i>
+              </div>
+              <h3>Research</h3>
+              <p>My main research in National Taiwan University and UC Berkeley lie 
+                in BioMEMS applications in single cell analysis and cell-based data analysis.
+              </p>
+          </div>
+          <!--/col-md-4-->
+        </div>
+        <!--/row-->
+      </div>
+      <!--/.container-->
+
+
+    </div>
+    <!--/.G-->
 
   <!------------ Activities --------------->
     <div class="container mt">
@@ -215,10 +238,10 @@
   <div id="sep">
     <div class="container">
       <div class="row centered">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>I live in the amazing island: Taiwan</h1>
+        <div class="col-md-5">
+          <h1>I live in the amazing Formosa: Taiwan</h1>
           <h3 class="mb">Album for my fantastic life</h3>
-          <button class="btn btn-conf btn-clear">Request for Information</button>
+          <button class="btn btn-conf btn-clear">See More Information</button>
         </div>
       </div>
       <!--/row-->
@@ -404,27 +427,12 @@
   </div>
   <!-- portfolio container -->
 
-  <div id="f">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-md-8 col-md-offset-2">
-          <a href="#"><i class="ion-social-twitter"></i></a>
-          <a href="#"><i class="ion-social-dribbble"></i></a>
-          <a href="#"><i class="ion-social-instagram"></i></a>
-          <a href="#"><i class="ion-social-facebook"></i></a>
-        </div>
-        <!--/col-md-8-->
-      </div>
-    </div>
-    <!--/container-->
-  </div>
-  <!--/.F-->
-
   <div id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h2 class="centered">Contact Form</h2>
+          <h1 class="centered"><strong>Contact</strong> Me</h1>
+          <p>&nbsp;</p>
           <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
             <div class="form-group">
@@ -461,23 +469,32 @@
   </div>
   <!-- / contact -->
 
-  <div id="copyrights">
-    <div class="container">
-      <p>
-        &copy; Copyrights <strong>Basic</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/basic-bootstrap-personal-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Basic template by <a href="https://templatemag.com/">TemplateMag</a>
+  <footer class="divider-wrapper-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <span class="copyright wow fadeInUp">&copy; 2018 <strong>Ting-Wei Wu</strong>. All Rights Reserved</span>
+              </div>
+              <div class="col-md-4 text-center">
+                  <a href="#" id="back-to-top"><i class="pe-7s-angle-up fa-4x"></i></a>
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-inline social-buttons wow fadeInUp">
+                      <li><a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
+                      </li>
+                      <li><a class="facebook" href="#"><i class="ion-social-facebook"></i></a>
+                      </li>
+                      <li><a class="google" href="#"><i class="ion-social-googleplus"></i></a>
+                      </li>
+                      <li><a class="linkedin" href="#"><i class="ion-social-linkedin"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
-  <!-- / copyrights -->
+  </footer>
+  <!-- / footer -->
+
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -499,6 +516,20 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- Change color on scroll -->
+  <script>
+    $(window).scroll(function(){
+    $('nav').toggleClass('scrolled',$(this).scrollTop() > 800)
+    if( $(this).scrollTop() > 800){
+      $('.scroll-link').attr('style','color: rgb(62, 62, 62)')
+    }else{
+      $('.scroll-link').attr('style','color: unset')
+    }
+    
+    });
+  </script>
+
 
 </body>
 </html>
