@@ -115,6 +115,11 @@ a:focus {
 	border-radius: 10px;
 }
 
+.btn {
+	color: #fff;
+	background-color: #50d6ff;
+}
+
 /*	################################################################
 	2.TOP MENUs
 ################################################################# */
@@ -241,7 +246,7 @@ button.navbar-toggle, .icon-bar {
 }
 
 #h h1 {
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 #h h3 {
@@ -254,17 +259,17 @@ button.navbar-toggle, .icon-bar {
 
 #item1 h3:hover, #item2 h3:hover, #item3 h3:hover{ color: #50d6ff; outline: 0; opacity: 1; font-size: 30px; }
 
-b#myname {
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000,
-		2px 2px 2px black;
+#myname {
+	font-size: 80px;
+	text-align: right;
 }
 
 .top-big-link {
 	text-align: center;
+}
+
+.right{
+	text-align: right;
 }
 
 
@@ -377,7 +382,25 @@ b#myname {
 /*	################################################################
 	.5 PROJECTS
 ################################################################# */
+#back {
+	background: url(../img/big-data.jpg) no-repeat center;
+	padding-top: 50px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;;
+	width: 100%;
 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
 
 .post-meta-list {
 	margin-bottom: 10px;
@@ -420,7 +443,7 @@ b#myname {
 	margin-bottom: 25px;
 }
 
-.direction-aware li.da-item {
+.direction-aware .da-item {
 	margin-bottom: 50px;
 }
 
@@ -436,41 +459,11 @@ b#myname {
 	clear: both;
 }
 
-.portfolio-filter .btn.active {
+/***********************************/
+
+.imgBox {
 	position: relative;
-}
-
-.portfolio-filter .btn.active:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(95, 183, 150, 0);
-	border-top-color: #5fb796;
-	border-width: 10px;
-	margin-left: -10px;
-}
-.portfo .portfolio-link {
-	display:block;
-	position:relative;
-	margin:0 auto;
-	max-width:400px;
 	overflow: hidden;
-}
-
-.portfo .portfolio-link .portfolio-hover {
-	position:absolute;
-	width:100%;
-	height:100%;
-	opacity:0;
-	background:rgba(95, 183, 150, 1);
-	-webkit-transition:all ease .5s;
-	-moz-transition:all ease .5s;
-	transition:all ease .5s
 }
 
 .direction-aware li a img {
@@ -490,36 +483,43 @@ b#myname {
 	transition:all ease .5s
 }
 
-.portfo .portfolio-link .portfolio-hover:hover {
-	opacity:1
+.imgBox .portfolio-hover-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	transition: 0.5s;
+	height: 100%;
 }
 
-.portfo .portfolio-link .portfolio-hover .portfolio-hover-content {
-	position:absolute;
-	top:50%;
-	width:100%;
-	height:20px;
-	margin-top:-12px;
-	text-align:center;
-	font-size:20px;
-	color:#fff
+.imgBox:hover .portfolio-hover-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00b2fe70;
+	transition: 0.5s;
+	z-index: 1;
 }
 
-.portfo .portfolio-link .portfolio-hover .portfolio-hover-content i, .direction-aware .portfolio-hover-content i {
-	margin-top:-12px;
+.imgBox .portfolio-hover-content .far {
+	position: absolute;
+	font-size: 0px;
 }
 
-.portfolio-hover-content i.pe-7s-close {
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+.imgBox:hover .portfolio-hover-content .far {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #fff;
 }
 
-.portfo .portfolio-link .portfolio-hover .portfolio-hover-content h3,  .portfo .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-	margin:0
-}
+
+
 
 .portfo .item-caption {
 	margin: 0 auto;
@@ -536,7 +536,7 @@ b#myname {
 }
 
 .portfo:hover .item-caption {
-	box-shadow: 0 5px 0px 0px #5fb796;
+	box-shadow: 0 5px 0px 0px #00b3fe;
 	-webkit-transition:all .5s ease-in-out;
 	-moz-transition:all .5s ease-in-out;
 	-o-transition:all .5s ease-in-out;
@@ -578,42 +578,26 @@ b#myname {
 	6. ACTIVITIES
 ################################################################# */
 
-.container .jumbotron {
-	box-shadow: 0 0 50px #3F0C1F;
-	border: 2px solid #3F0C1F;
-}
+
 
 /***** Large devices only *****/
 @media (min-width: 1200px)	{
-	.jumbotron {
-		background: url('../img/sep.jpg') no-repeat;
-		height: 675px;
-	}
+	
 }
 
 /***** Medium devices only *****/
 @media (min-width: 992px)	and (max-width: 1199px){
-	.jumbotron {
-		background: url('../img/sep.jpg') no-repeat;
-		height: 558px;
-	}
+	
 }
 
 /***** Small devices only *****/
 @media (min-width: 768px)	and (max-width: 991px){
-	.jumbotron {
-		background: url('../img/sep.jpg') no-repeat;
-		height: 432px;
-	}
+	
 }
 
 /***** Extra Small devices only *****/
 @media (max-width: 767px){
-	.jumbotron {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-		padding: 0;
-	}
+	
 }
 
 
@@ -752,6 +736,10 @@ footer {
 	padding:25px 0;
 }
 
+#back-to-top {
+	font-size: 30px;
+}
+
 footer span.copyright {
 	text-transform:uppercase;
 	text-transform:none;
@@ -770,7 +758,7 @@ ul.social-buttons li a {
 	height: 40px;
 	border-radius: 0%;
 	border: 2px solid #fff;
-	font-size: 16px;
+	font-size: 25px;
 	line-height: 36px;
 	outline: 0;
 	color: #fff;
@@ -813,12 +801,12 @@ ul.social-buttons li a.linkedin:hover {
 	color: #fff;	
 }
 
-ul.social-buttons li a.google {
+ul.social-buttons li a.phone {
 	border: 2px solid #db4437;
 	color: #db4437;
 }
 
-ul.social-buttons li a.google:hover {
+ul.social-buttons li a.phone:hover {
 	border: 2px solid #db4437;
 	background-color: #db4437;
 	color: #fff;	

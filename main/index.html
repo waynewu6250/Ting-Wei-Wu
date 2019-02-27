@@ -61,11 +61,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="top-navbar-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="scroll-link" href="#top">Top</a></li>
-          <li><a class="scroll-link" href="#about-me">About me</a></li>
-          <li><a class="scroll-link" href="#projects">Projects</a></li>
-          <li><a class="scroll-link" href="#activities">Activities</a></li>
-          <li><a class="scroll-link" href="#album">Album</a></li>
+          <li><a id="scroll-link1" href="#top">Top</a></li>
+          <li><a id="scroll-link2" href="#about-me">About me</a></li>
+          <li><a id="scroll-link3" href="#projects">Projects</a></li>
+          <li><a id="scroll-link4" href="#activities">Activities</a></li>
+          <li><a id="scroll-link5" href="#album">Album</a></li>
         </ul>
       </div>
     </div>
@@ -75,17 +75,20 @@
   <div id="h">
     <div class="container centered">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 mt wow bounceInDown">
-          <h1>Hello, my name is <b id="myname">Ting-Wei Wu</b> from Taiwan.<br/><br/></h1>
+        <div class="col-md-8 col-md-offset-2 mt wow bounceInDown pull-right right">
+          <h1>
+            THIS IS<br/>
+            <div id="myname"><b>Ting-Wei&nbsp;</b>Wu<br/></div><br/>
+          </h1>
           <h3>
-            MEng at UC Berkeley BioE<br/>
-            MS in National Taiwan University EE
+            UC Berkeley BioE MEng <br/><br/>
+            National Taiwan University EE MS
           </h3>
         </div>
       </div>
       <!--/row-->
 
-      <div class="row mts">
+      <div class="row mt">
         <div class="col-sm-4 wow tada" id="item1">
           <i class="ion-ios7-monitor-outline"></i>
           <h3>Medical Electronics</h3>
@@ -111,7 +114,7 @@
   <!--H-->
 
   <!------------ About me --------------->
-  <div class="container ptb">
+  <div class="container ptb" id="about-me">
     <div class="row">
       <h2 class="centered mb wow jellyInDown">I am interested in medical electronic device innovation<br/>
         & machine learning applications in healthcare.</h2>
@@ -165,7 +168,7 @@
       <h4>&nbsp;</h4>
       <div class="row">
         <div class="col-md-10 col-md-offset-1 wow zoomIn">
-          <img src="img/items.jpg" class="img-responsive center-block" id="round-corner"alt="">
+          <img src="img/items.jpg" class="img-responsive center-block" id="round-corner" alt="">
         </div>
       </div>
       <!--/row-->
@@ -177,7 +180,7 @@
 
   <!------------ Projects --------------->
   <div id="padding">
-    <div class="container">
+    <div class="container" id="projects">
       <div class="row centered mb wow jellyInDown">
         <h2>Check some of my latest works.</h2>
         <div class="col-md-8 col-md-offset-2">
@@ -189,18 +192,18 @@
       <!--/row-->
     </div>
     <!--/.container-->
-    <div id="g">
+    <div id="back">
       <div class="container">
         <div class="row">
-          <ul class="direction-aware">
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
+          <div class="direction-aware">
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
                 <a href="#" title="View Post">
-                    <img src="img/projects/blog1.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                                
+                    <div class="imgBox">
+                      <img src="img/projects/blog1.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
                 </a>
                 <div class="item-caption">
                     <h4>Travelling The Globe</h4>
@@ -210,111 +213,116 @@
                         <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
                     </ul> 
                     <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
                 </div>
-            </li>
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
-                <a href="#" title="View Image">
-                    <img src="img/projects/blog2.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                                
-                </a>
-                <div class="item-caption">
-                    <h4>This Band Rock</h4>
-                    <ul class="list-inline post-meta-list">
-                        <li><p class="text-muted"><i class="far fa-folder"></i> Music</p></li>
-                        <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
-                        <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
-                    </ul> 
-                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
-                </div>
-            </li>
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
+            </div>
+
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
                 <a href="#" title="View Post">
-                    <img src="img/projects/blog3.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                               
+                    <div class="imgBox">
+                      <img src="img/projects/blog2.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
                 </a>
                 <div class="item-caption">
-                    <h4>Treasure Chest</h4>
+                    <h4>Travelling The Globe</h4>
                     <ul class="list-inline post-meta-list">
-                        <li><p class="text-muted"><i class="far fa-folder"></i> News</p></li>
+                        <li><p class="text-muted"><i class="far fa-folder"></i> <a href="#" title="">Travel</a></p></li>
                         <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
                         <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
                     </ul> 
                     <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
                 </div>
-            </li>
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
+            </div>
+
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
                 <a href="#" title="View Post">
-                    <img src="img/projects/blog4.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                              
+                    <div class="imgBox">
+                      <img src="img/projects/blog3.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
                 </a>
                 <div class="item-caption">
-                    <h4>New York Night</h4>
+                    <h4>Travelling The Globe</h4>
                     <ul class="list-inline post-meta-list">
-                        <li><p class="text-muted"><i class="far fa-folder"></i> News</p></li>
+                        <li><p class="text-muted"><i class="far fa-folder"></i> <a href="#" title="">Travel</a></p></li>
                         <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
                         <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
                     </ul> 
                     <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
                 </div>
-            </li>
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
+            </div>
+
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
                 <a href="#" title="View Post">
-                    <img src="img/projects/blog5.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                               
+                    <div class="imgBox">
+                      <img src="img/projects/blog4.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
                 </a>
                 <div class="item-caption">
-                    <h4>Hot Gossip</h4>
+                    <h4>Travelling The Globe</h4>
                     <ul class="list-inline post-meta-list">
-                        <li><p class="text-muted"><i class="far fa-folder"></i> News</p></li>
+                        <li><p class="text-muted"><i class="far fa-folder"></i> <a href="#" title="">Travel</a></p></li>
                         <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
                         <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
                     </ul> 
                     <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
                 </div>
-            </li>
-            <li class="col-md-4 portfo da-item wow fadeInUp" data-mh="blog-posts">
+            </div>
+
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
                 <a href="#" title="View Post">
-                    <img src="img/projects/blog6.jpg" class="img-responsive" alt="">
-                    <div>
-                        <div class="portfolio-hover-content">
-                            <i class="pe-7s-close fa-3x"></i>
-                        </div>
-                    </div>                                
+                    <div class="imgBox">
+                      <img src="img/projects/blog5.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
                 </a>
                 <div class="item-caption">
-                    <h4>Where Are They Now?</h4>
+                    <h4>Travelling The Globe</h4>
                     <ul class="list-inline post-meta-list">
-                        <li><p class="text-muted"><i class="far fa-folder"></i> News</p></li>
+                        <li><p class="text-muted"><i class="far fa-folder"></i> <a href="#" title="">Travel</a></p></li>
                         <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
                         <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
                     </ul> 
                     <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
-                    <a class="btn btn-primary mt2 pull-right" href="single-post.html">Read More</a>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
                 </div>
-            </li>
-          </ul>
-          <!--/ul-->
+            </div>
+
+            <div class="col-md-4 portfo wow fadeInUp da-item" data-mh="blog-posts">
+                <a href="#top" title="View Post">
+                    <div class="imgBox">
+                      <img src="img/projects/blog6.jpg" class="img-responsive" alt="">
+                      <div class="portfolio-hover-content">
+                          <i class="far fa-folder"></i>
+                      </div>
+                    </div>                             
+                </a>
+                <div class="item-caption">
+                    <h4>Travelling The Globe</h4>
+                    <ul class="list-inline post-meta-list">
+                        <li><p class="text-muted"><i class="far fa-folder"></i> <a href="#" title="">Travel</a></p></li>
+                        <li><p class="text-muted"><i class="far fa-clock-o"></i> <a href="#" title="">10/12/2014</a></p></li>
+                        <li><p class="text-muted"><i class="far fa-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                    </ul> 
+                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                    <a class="btn mt2 pull-right" href="single-post.html">Read More</a>
+                </div>
+            </div>
+          </div>
+          <!--/list-->
         </div>
         <!--/row-->
       </div>
@@ -325,7 +333,7 @@
     <!--/.G-->
 
   <!------------ Activities --------------->
-    <div class="container mt wow jellyInDown">
+    <div class="container mt wow jellyInDown" id="activities">
       <div class="row centered">
         <h2 class="mb">Here are my activity experiences and how I build my life style.</h2>
       </div>
@@ -335,22 +343,13 @@
   </div>
   <!--/padding-->
   <div id="g">
-    <div class="container mt">
-      <div class="row centered">
-        <div class="jumbotron">
-          <img src="img/sep.jpg" alt="Pic" 
-          class="img-responsive visible-xs">
-        </div>
-      </div>
-      <!--/row-->
-    </div>
-    <!--/container-->
+    
   </div>
 
   <!------------ Album --------------->
 
   <div id="sep">
-    <div class="container">
+    <div class="container" id="album">
       <div class="row centered">
         <div class="col-md-5">
           <h1>I live in the amazing Formosa: Taiwan</h1>
@@ -587,20 +586,20 @@
       <div class="container">
           <div class="row">
               <div class="col-md-4">
-                  <span class="copyright wow fadeInUp">&copy; 2018 <strong>Ting-Wei Wu</strong>. All Rights Reserved</span>
+                  <span class="copyright wow fadeInUp">&copy; 2019 <strong>Ting-Wei Wu</strong>. All Rights Reserved</span>
               </div>
               <div class="col-md-4 text-center">
-                  <a href="#" id="back-to-top"><i class="pe-7s-angle-up fa-4x"></i></a>
+                  <a href="#" id="back-to-top"><i class="ion-ios7-arrow-up"></i></a>
               </div>
               <div class="col-md-4">
                   <ul class="list-inline social-buttons wow fadeInUp">
-                      <li><a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
+                      <li><a class="facebook" href="#"><i class="ion-social-facebook"></i></a>  
                       </li>
-                      <li><a class="facebook" href="#"><i class="ion-social-facebook"></i></a>
-                      </li>
-                      <li><a class="google" href="#"><i class="ion-social-googleplus"></i></a>
+                      <li><a class="phone" href="#"><i class="ion-iphone"></i></a>
                       </li>
                       <li><a class="linkedin" href="#"><i class="ion-social-linkedin"></i></a>
+                      </li>
+                      <li><a class="twitter" href="#"><i class="ion-social-twitter"></i></a>
                       </li>
                   </ul>
               </div>
@@ -637,9 +636,17 @@
     $(window).scroll(function(){
     $('nav').toggleClass('scrolled',$(this).scrollTop() > 800)
     if( $(this).scrollTop() > 800){
-      $('.scroll-link').attr('style','color: #182326')
+      $('#scroll-link1').attr('style','color: #182326')
+      $('#scroll-link2').attr('style','color: #182326')
+      $('#scroll-link3').attr('style','color: #182326')
+      $('#scroll-link4').attr('style','color: #182326')
+      $('#scroll-link5').attr('style','color: #182326')
     }else{
-      $('.scroll-link').attr('style','color: unset')
+      $('#scroll-link1').attr('style','color: unset')
+      $('#scroll-link2').attr('style','color: unset')
+      $('#scroll-link3').attr('style','color: unset')
+      $('#scroll-link4').attr('style','color: unset')
+      $('#scroll-link5').attr('style','color: unset')
     }
     
     });
