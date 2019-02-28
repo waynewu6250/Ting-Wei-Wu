@@ -466,13 +466,13 @@ button.navbar-toggle, .icon-bar {
 	overflow: hidden;
 }
 
-.direction-aware li a img {
+.direction-aware a img {
 	-webkit-transition:all ease .5s;
 	-moz-transition:all ease .5s;
 	transition:all ease .5s
 }
 
-.direction-aware li a:hover img {
+.direction-aware a:hover img {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
