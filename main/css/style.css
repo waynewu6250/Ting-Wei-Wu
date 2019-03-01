@@ -37,6 +37,19 @@ p {
 	margin-top: 10px;
 }
 
+p2 {
+	padding: 0;
+	margin-bottom: 12px;
+  font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+
+
 html,
 body {
 	height: 100%;
@@ -138,7 +151,7 @@ a:focus {
 .navbar.navbar-no-bg { background: transparent !important; }
 
 .navbar.navbar-no-bg.scrolled { 
-	background: rgba(255, 255, 255, 0.9) !important
+	background: rgba(255, 255, 255, 0.5) !important
 }
 
 ul.navbar-nav {
@@ -228,9 +241,10 @@ button.navbar-toggle, .icon-bar {
 #h {
 	background: url(../img/header.jpg) no-repeat center;
 	padding-top: 5px;
+	padding-bottom: 80px;
 	background-attachment: relative;
 	background-position: center center;
-	height: 1000px;
+	min-height: 450px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -243,6 +257,12 @@ button.navbar-toggle, .icon-bar {
     -o-background-size: cover;
     background-size: cover;
     color: white;
+}
+
+@media (min-width: 1500px) {
+	#h{
+		height: 1000px;
+	}
 }
 
 #h h1 {
@@ -306,6 +326,26 @@ button.navbar-toggle, .icon-bar {
 /*	################################################################
 	.4 ABOUT ME
 ################################################################# */
+#hh {
+	background: url(../img/header2.jpg) no-repeat center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
 
 #g {
 	padding-top: 50px;
@@ -387,7 +427,7 @@ button.navbar-toggle, .icon-bar {
 	padding-top: 50px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;;
+	min-height: 450px;
 	width: 100%;
 
     -webkit-background-size: 100%;
