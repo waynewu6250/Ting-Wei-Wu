@@ -122,7 +122,7 @@ a:focus {
 }
 
 
-#round-corner{
+.round-corner{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -618,56 +618,6 @@ button.navbar-toggle, .icon-bar {
 	6. ACTIVITIES
 ################################################################# */
 
-.activity {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50vh;
-}
-
-.slider-wrapper {
-	width: auto;
-	height: auto;
-	overflow: hidden;
-}
-
-.inner-wrapper {
-	width: 500%;
-	height: 100%;
-	position: relative;
-	left: -100%;
-}
-
-.slide {
-	width: calc(100%/5);
-	height: 100%;
-	float: left;
-	color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.button {
-	width: 30px;
-	height: 30px;
-	border-top: 2px solid black;
-	position: absolute;
-	cursor: pointer;
-}
-
-.prev {
-	border-left: 2px solid black;
-	left: 10%;
-	transform: rotate(-45deg);
-}
-
-.next {
-	border-right: 2px solid black;
-	right: 10%;
-	transform: rotate(45deg);
-}
-
 
 
 /***** Large devices only *****/
@@ -687,6 +637,7 @@ button.navbar-toggle, .icon-bar {
 
 /***** Extra Small devices only *****/
 @media (max-width: 767px){
+
 	
 }
 
@@ -721,6 +672,40 @@ button.navbar-toggle, .icon-bar {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
+
+.portfolio-menu{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.portfolio-menu ul li{
+	display: inline-block;
+	margin-left: 10px;
+	list-style: none;
+	padding: 10px 15px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.portfolio-menu ul li:hover{
+	background: #fff;
+	color: #000;
+}
+
+.portfolio-item{
+	transition: all 0.4s ease-in-out;
+}
+
+li.active{
+	background: #fff;
+	color: #000;
+}
+
 
 /*	################################################################
 	8. CONTACT
