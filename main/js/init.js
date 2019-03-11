@@ -66,3 +66,42 @@ $('.portfolio-menu ul li').click(function(){
     });
     return false;
 });
+
+//swiper
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 5,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+if ($( window ).width() <= 1000){
+    swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    
+}
